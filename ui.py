@@ -3,9 +3,9 @@ from quiz_brain import QuizBrain
 THEME_COLOR = "#375362"
 
 
-class QuizInterface:   # tha name of the class should be written in a PascalCase
+class QuizInterface:   
 
-    def __init__(self, quiz_brain: QuizBrain):  # we must define the object datatype from class QuizBrain
+    def __init__(self, quiz_brain: QuizBrain): 
         self.quiz = quiz_brain
         self.window = Tk()
         self.window.title("The Quizzler")
@@ -13,7 +13,7 @@ class QuizInterface:   # tha name of the class should be written in a PascalCase
         self.canvas = Canvas(height=350, width=400, bg="White")
         self.q_text = self.canvas.create_text(185,
                                               150,
-                                              width=350,     # to wrap the text into the canvas
+                                              width=350,    
                                               text="",
                                               font=("Arial", 20, "bold"),
                                               fill=THEME_COLOR)
